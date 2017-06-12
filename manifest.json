@@ -1,8 +1,12 @@
 {
-  "runtime":{
-    "majorVersion":"2.4.1"
+  "runtime": {
+    "majorVersion": "2.4.1"
   },
   "command": "ruby lib/simple_server.rb",
+  "startupTime": 30,
+  "shutdownTime": 0,
+  "isClustered": false,
+  "requiresAntiAffinity": false,
   "release": {},
   "notes": "Simple Server Application"
 }

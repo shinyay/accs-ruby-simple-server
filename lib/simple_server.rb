@@ -3,6 +3,8 @@ require "socket"
 PORT = ENV['PORT'] || 8080
 server = TCPServer.open(PORT)
 
+puts "Listening PORT: #{PORT}"
+
 def read_html
 	File.open(File.expand_path('../index.html', __FILE__)) do |f|
     f.read
@@ -16,17 +18,15 @@ while true
     request = socket.gets
     p request
 
-    if request.include? "GET"
-      content = read_html
-      socket.write <<-EOF
+    content = read_html
+    socket.write <<-EOF
 HTTP/1.1 200 OK
 Content-Type: text/html; charset=UTF-8
 Server: rserver
 Connection: close
 
 #{content}
-      EOF
-    end
+    EOF
 
     socket.close
   end
