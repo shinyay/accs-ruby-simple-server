@@ -26,6 +26,8 @@ Socket ライブラリの TCPServer クラスを使うと簡単にサーバア�
 
 ## ソースコード説明
 
+- [simple_server.rb](https://raw.githubusercontent.com/shinyay/oracle-accs-ruby-simple-server/1.0.0/lib/simple_server.rb)
+
 ### Socket ライブラリのロード
 
 ```ruby
@@ -150,6 +152,9 @@ Application Container Cloud Service のサービスコンソール画面から�
 manifest 及び deployment plan は選択不用です。
 
 なお、アーカイブファイルに含まれる manifest.json にランタイム・バージョンを記載済みのため、デフォルトで指定したバージョンが選択されている状態になっています。
+
+以下のアプリケーションをダウンロードしてデプロイ対象にしてもよいです:
+- [サンプル・アプリケーション](https://github.com/shinyay/oracle-accs-ruby-simple-server/releases/download/1.0.0/oracle-accs-ruby-simple-server.zip)
 
 ### 5. デプロイ
 
